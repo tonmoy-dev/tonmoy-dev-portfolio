@@ -13,17 +13,17 @@ const HeroArea = () => {
   return (
     <>
       <div>
-        <Spotlight
+        {/* <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
-        />
+        /> */}
       </div>
       <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-violet-900/[0.1] bg-grid-black/[0.1] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-        <div className="flex justify-center relative mb-20 z-10">
-          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="flex justify-center relative z-10">
+          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center gap-1 md:gap-5 mb-10">
             <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
               Transforming Ideas into Digital Reality
             </p>
@@ -34,9 +34,9 @@ const HeroArea = () => {
 
             <TextGenerateEffect
               words={wordsForTextGenerateEffect}
-              className="text-center text-2xl font-normal"
+              className="text-center text-base md:text-2xl font-normal leading-7 md:leading-8"
             />
-            <div className="text-4xl mx-auto font-normal text-center mb-12">
+            <div className="text-2xl md:text-4xl mx-auto font-normal text-center mb-10">
               A
               <FlipWords words={wordsForFlipping} className="text-primary" />
               Developer.
